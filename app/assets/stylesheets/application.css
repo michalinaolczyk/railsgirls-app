@@ -14,8 +14,9 @@
  *= require_self
  */
  .list-of-entries {
+   background-position: center;
    width: 50%;
-   background-color: grey;
+   background-color: pink;
  }
  body {
    font-family: sans-serif;
