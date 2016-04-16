@@ -1,0 +1,15 @@
+<h1>Welcome!</h1>
+
+<div class="list-of-entries">
+<ul>
+  <% for entry in @entries %>
+  <li>
+    <h2><%= entry.title %> </h2>
+    <p class="date"> <%= entry.date %></p>
+    <p> <%= entry.contents %></p>
+    <p> <%= link_to("Edit this entry", edit_entry_path(entry)) %> </p>
+    <p> <%= link_to("Show more", entry_path(entry)) %> </p>
+  </li>
+  <% end %>
+</ul>
+</div>
